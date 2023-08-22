@@ -5,9 +5,9 @@ import { useEffect } from "react";
 import ReactGA from 'react-ga';
 const App = () => {
 
-  const TRACKING_ID = "UA-262505905-1";
+  const TRACKING_ID = import.meta.env.VITE_REACT_APP_TRACKING_ID;
   ReactGA.initialize(TRACKING_ID);
-  
+
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
