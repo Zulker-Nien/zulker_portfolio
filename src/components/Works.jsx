@@ -1,6 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -17,13 +17,18 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    initial={fadeIn("up", "spring", index * 0.5, 0.75)}
+    exit={fadeIn("down", "spring", index * 0.5, 0.75, easeOut)}
+    >
+      
       <Tilt
         options={{
           max: 45,
-          scale: 1,
+          scale: 0.9,
           speed: 450,
         }}
+        reverse
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
