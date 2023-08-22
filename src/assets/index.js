@@ -29,7 +29,8 @@ import upwork from "./company/upwork.png";
 import tecbix from "./tecbix.png";
 import miniecom from "./miniecom.png";
 import petopia from "./petopia.png";
-
+import testimonial1 from "./testimonial1.jpg";
+import testimonial2 from "./testimonial2.jpg";
 export {
   logo,
   backend,
@@ -59,4 +60,6 @@ export {
   tecbix,
   miniecom,
   petopia,
+  testimonial1,
+  testimonial2,
 };

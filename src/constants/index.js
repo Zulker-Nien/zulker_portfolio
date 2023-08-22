@@ -22,6 +22,8 @@ import {
   petopia,
   threejs,
   insidemaps,
+  testimonial1,
+  testimonial2,
 } from "../assets";
 
 export const navLinks = [
@@ -158,26 +160,26 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Zulker brings in great energy in every conversation. Working with him is like working with a friend. Further, he is very passionate about the work and I believe he will do great things as we move forward. I highly recommend him.",
+    name: "Zeno Saviour",
+    designation: "Founder",
+    company: "Characters.xyz",
+    image: testimonial1,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Nice to work with Zulker. He is very responsible Person. Provide good quality work with fast turnaround. I recommend. A++++",
+    name: "Priyanka",
+    designation: "Project Manager",
+    company: "Magenta",
+    image: testimonial2,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Amazing young developer delivered my gig in a record time. Attention to detail and such an awesome fresh design. I like the initiative you took. Your customer skills is awesome. I'm a happy customer, will definitely use you again and again",
+    name: "Kureish Isaacs",
+    designation: "Life Coach",
+    company: "Footprints Lifecoaching",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
