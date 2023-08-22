@@ -1,8 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
-
+import { useEffect } from "react";
+import ReactGA from 'react-ga';
 const App = () => {
+
+  const TRACKING_ID = "UA-262505905-1";
+  ReactGA.initialize(TRACKING_ID);
+  
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
